@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borer-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  width: 100%;
+  background: lemonchiffon;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo-container img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: auto 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 5px 5px;
+}
+
+.nav-link:hover {
+  text-decoration-line: underline;
+}
+
+.nav-link:visited {
+  color: black;
+}
+
+.nav-links li img {
+  width: 10px;
+  padding: 0px 0px;
+}
