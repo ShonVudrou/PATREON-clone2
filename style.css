@@ -265,12 +265,17 @@ h1 {
   flex: 1;
 }
 
+.main {
+  display: flex;
+  width: 100vh;
+  justify-content: center;
+}
 /* The section with a long search-box */
 
 .search-section {
   display: flex;
   flex-direction: column;
-  height: 400px;
+  height: 360px;
 }
 
 .search-section h2 {
@@ -338,7 +343,6 @@ h1 {
 .whats-patreon {
   display: block;
   margin: 0 auto;
-  width: 80rem;
 }
 
 .whats-patreon h2 {
@@ -346,6 +350,15 @@ h1 {
   text-align: center;
   font-weight: 500;
   margin: 0px 0px 20px 0px;
+}
+
+.whats-patreon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .whats-patreon p {
@@ -370,6 +383,7 @@ h1 {
   flex-flow: row;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 70px;
 }
 
 .full-text-wrap-1 {
@@ -400,21 +414,25 @@ h1 {
 .feedback {
   display: block;
   box-sizing: border-box;
-  width: 530px;
+  max-width: 520px;
+}
+
+.full-personal-info-wrap-1 {
+  width: 470px;
 }
 
 .name-wrap {
   display: flex;
   flex-direction: column;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 20px 8px;
 }
 
 .name-wrap a {
   text-decoration: none;
   color: #141518;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
-  padding: 0px 20px 5px 0px;
+  padding: 10px 20px 5px 0px;
 }
 
 .name-wrap a:hover {
@@ -427,7 +445,7 @@ h1 {
 }
 
 .portrait {
-  height: 310px;
+  max-height: 310px;
   padding: 0 8px;
 }
 
@@ -435,6 +453,7 @@ h1 {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
+  padding-left: 8px;
 }
 
 .full-text-wrap-2 {
@@ -442,8 +461,10 @@ h1 {
 }
 
 .full-personal-info-wrap-2 {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 0px 0px 0px 20px;
+  width: 470px;
 }
 
 .description-2 {
@@ -456,6 +477,34 @@ h1 {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
+  padding-left: 8px;
+}
+
+/* Section Who uses Patreon? */
+
+.who-uses-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-uses-container h2 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.who-uses-container p {
+  font-size: 20px;
+  font-weight: 300;
+  justify-content: center;
+  line-height: 2;
+  padding: 20px 0px 100px 0px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.whats-patreon-container .content-wrap {
 }
 
 /* Footer */
