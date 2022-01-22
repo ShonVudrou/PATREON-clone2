@@ -208,7 +208,7 @@ nav {
   border-color: #ff484f;
 }
 
-/* First section - Intro */
+/* First SECTION - Intro */
 
 .intro {
   display: flex;
@@ -270,7 +270,7 @@ h1 {
   width: 100vh;
   justify-content: center;
 }
-/* The section with a long search-box */
+/* The SECTION with a long search-box */
 
 .search-section {
   display: flex;
@@ -278,10 +278,15 @@ h1 {
   height: 360px;
 }
 
-.search-section h2 {
+h2 {
   font-size: 42px;
   text-align: center;
   font-weight: 500;
+  color: #241E11;
+}
+
+.search-section h2 {
+  font-size: 42px;
   margin: 100px 20px 40px 20px;
 }
 
@@ -338,7 +343,7 @@ h1 {
   cursor: pointer;
 }
 
-/* "What's Patreon?"" section */
+/* "What's Patreon?" SECTION */
 
 .whats-patreon {
   display: block;
@@ -346,9 +351,6 @@ h1 {
 }
 
 .whats-patreon h2 {
-  font-size: 42px;
-  text-align: center;
-  font-weight: 500;
   margin: 0px 0px 20px 0px;
 }
 
@@ -370,7 +372,7 @@ h1 {
   margin: 0px 190px;
 }
 
-/* Feedbacks section */
+/* Feedbacks SECTION */
 
 .feedbacks {
   display: block;
@@ -480,7 +482,7 @@ h1 {
   padding-left: 8px;
 }
 
-/* Section Who uses Patreon? */
+/* Who uses Patreon? SECTION*/
 
 .who-uses-container {
   display: flex;
@@ -490,10 +492,7 @@ h1 {
   padding-top: 80px;
 }
 
-.who-uses-container h2 {
-  font-size: 42px;
-  font-weight: 500;
-}
+
 
 .who-uses-container p {
   font-size: 20px;
@@ -510,13 +509,13 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 1000px;
+  width: 1060px;
   height: 500px;
   padding: 80px 40px;
 }
 
 .content-wrap img {
-  width: 530px;
+  width: 510px;
 }
 
 .slideshow-list-container {
@@ -530,10 +529,10 @@ h1 {
 .professions-list {
   margin: 0 60px;
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 3.3rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
 }
 
 .professions-list a {
@@ -545,6 +544,126 @@ h1 {
   text-decoration: underline;
   color: #131313;
 }
+
+
+
+/* It's easier than you think SECTION */
+
+.its-easier-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 0 100px 0;
+}
+
+.its-easier-container h2 {
+  padding-bottom: 30px;
+}
+
+.its-easier-container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 60px;
+}
+
+.its-easier-container img {
+  max-width: 1020px;
+  box-shadow: 10px 15px 60px 1px #dadada;
+  
+}
+
+
+
+
+
+
+
+
+/* Other Creators SECTION */
+
+
+.other-creators .content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+}
+
+.h2-wrap {
+  padding-bottom: 50px;
+}
+
+.columns-wrap{
+display: flex;
+align-items: flex-start;
+justify-content: center;
+}
+
+.columns-wrap img {
+  width: 300px;
+  padding-bottom: 10px;
+}
+
+.column-1, .column-2, .column-3 {
+  width: 300px;
+  padding: 0 35px;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.columns-wrap p {
+  font-weight: 200;
+  color: rgb(105, 105, 105);
+  line-height: 1.5;
+  letter-spacing: normal;
+  padding-bottom: 20px;
+}
+
+.columns-wrap a {
+  font-weight: 300;
+  color: #131313;
+}
+
+
+
+
+/* Are you Ready SECTION */
+
+.are-you-ready {
+  background: #fafafa;
+}
+
+.are-you-ready .content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.are-you-ready .content-wrap h2 {
+  padding-bottom: 10px;
+}
+
+.are-you-ready .btn-container {
+  margin: 25px 0 35px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 
