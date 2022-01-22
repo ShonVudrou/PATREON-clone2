@@ -487,6 +487,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 80px;
 }
 
 .who-uses-container h2 {
@@ -499,12 +500,50 @@ h1 {
   font-weight: 300;
   justify-content: center;
   line-height: 2;
-  padding: 20px 0px 100px 0px;
+  padding: 20px 0px 0px 0px;
   max-width: 800px;
   text-align: center;
 }
 
-.whats-patreon-container .content-wrap {
+.who-uses-container .content-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+  padding: 80px 40px;
+}
+
+.content-wrap img {
+  width: 530px;
+}
+
+.slideshow-list-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.professions-list {
+  margin: 0 60px;
+  list-style: none;
+  font-size: 1.5rem;
+  line-height: 3.3rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.professions-list a {
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+.professions-list a:hover {
+  text-decoration: underline;
+  color: #131313;
 }
 
 /* Footer */
