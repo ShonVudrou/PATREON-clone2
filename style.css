@@ -265,11 +265,6 @@ h1 {
   flex: 1;
 }
 
-.main {
-  display: flex;
-  width: 100vh;
-  justify-content: center;
-}
 /* The SECTION with a long search-box */
 
 .search-section {
@@ -282,7 +277,7 @@ h2 {
   font-size: 42px;
   text-align: center;
   font-weight: 500;
-  color: #241E11;
+  color: #241e11;
 }
 
 .search-section h2 {
@@ -345,22 +340,17 @@ h2 {
 
 /* "What's Patreon?" SECTION */
 
-.whats-patreon {
-  display: block;
-  margin: 0 auto;
-}
-
-.whats-patreon h2 {
-  margin: 0px 0px 20px 0px;
-}
-
 .whats-patreon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
+}
+
+.whats-patreon h2 {
+  margin: 0px 0px 20px 0px;
 }
 
 .whats-patreon p {
@@ -375,26 +365,26 @@ h2 {
 /* Feedbacks SECTION */
 
 .feedbacks {
-  display: block;
   margin: 0 auto;
-  width: 100%;
+  max-width: 980px;
 }
 
 .feedback-container {
   display: flex;
-  flex-flow: row;
   justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 70px;
+  flex-direction: row-reverse;
+  flex: wrap;
+  margin: 0 auto;
+  max-width: 1024px;
 }
 
-.full-text-wrap-1 {
-  margin-left: 100px;
+.feedback-container:nth-child(2n + 1) {
+  flex-direction: row;
 }
 
 .description-1 {
   display: block;
-  width: 570px;
+  width: 50%;
   padding: 0 8px;
 }
 
@@ -416,17 +406,12 @@ h2 {
 .feedback {
   display: block;
   box-sizing: border-box;
-  max-width: 520px;
-}
-
-.full-personal-info-wrap-1 {
-  width: 470px;
+  max-width: 50%;
 }
 
 .name-wrap {
-  display: flex;
-  flex-direction: column;
-  padding: 0px 0px 20px 8px;
+  display: block;
+  padding: 10px 0px 20px 8px;
 }
 
 .name-wrap a {
@@ -444,42 +429,20 @@ h2 {
 .name-wrap p {
   font-weight: 300;
   font-size: 14px;
+  padding-top: 5px;
 }
 
 .portrait {
-  max-height: 310px;
+  width: 95%;
   padding: 0 8px;
 }
 
-.mikki-kendall-p {
+.opinion-p {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
   padding-left: 8px;
-}
-
-.full-text-wrap-2 {
-  text-align: left;
-}
-
-.full-personal-info-wrap-2 {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 0px 0px 20px;
-  width: 470px;
-}
-
-.description-2 {
-  display: block;
-  width: 460px;
-  padding-left: 0px;
-}
-
-.baratunde-thurston-p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
-  padding-left: 8px;
+  padding-bottom: 80px;
 }
 
 /* Who uses Patreon? SECTION*/
@@ -491,8 +454,6 @@ h2 {
   align-items: center;
   padding-top: 80px;
 }
-
-
 
 .who-uses-container p {
   font-size: 20px;
@@ -515,19 +476,20 @@ h2 {
 }
 
 .content-wrap img {
-  width: 510px;
+  max-width: 480px;
+  padding-right: 50px;
 }
 
 .slideshow-list-container {
   display: flex;
-  width: 100%;
+  width: 45%;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
 
 .professions-list {
-  margin: 0 60px;
+  margin: 0 30px;
   list-style: none;
   font-size: 1.6rem;
   line-height: 3.3rem;
@@ -545,12 +507,10 @@ h2 {
   color: #131313;
 }
 
-
-
 /* It's easier than you think SECTION */
 
 .its-easier-container {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -570,18 +530,9 @@ h2 {
 .its-easier-container img {
   max-width: 1020px;
   box-shadow: 10px 15px 60px 1px #dadada;
-  
 }
 
-
-
-
-
-
-
-
 /* Other Creators SECTION */
-
 
 .other-creators .content-wrap {
   display: flex;
@@ -595,10 +546,10 @@ h2 {
   padding-bottom: 50px;
 }
 
-.columns-wrap{
-display: flex;
-align-items: flex-start;
-justify-content: center;
+.columns-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .columns-wrap img {
@@ -606,7 +557,9 @@ justify-content: center;
   padding-bottom: 10px;
 }
 
-.column-1, .column-2, .column-3 {
+.column-1,
+.column-2,
+.column-3 {
   width: 300px;
   padding: 0 35px;
 }
@@ -630,9 +583,6 @@ h5 {
   color: #131313;
 }
 
-
-
-
 /* Are you Ready SECTION */
 
 .are-you-ready {
@@ -654,17 +604,6 @@ h5 {
   margin: 25px 0 35px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 
 .footer-container {
@@ -673,7 +612,12 @@ h5 {
 }
 
 .footer {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content-wrap {
+  width: 100%;
   height: 500px;
   background-color: #141518;
   color: #f5f4f2;
@@ -681,8 +625,10 @@ h5 {
   flex-direction: row;
   place-content: flex-start;
   justify-content: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .footer-logo-container img {
@@ -714,14 +660,17 @@ h5 {
 }
 
 .options {
+  align-self: flex-start;
   display: flex;
   flex-direction: column;
-  margin-right: 4rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-right: 200px;
 }
 
 .language-btn {
   height: 46px;
-  width: 170px;
+  width: 150px;
   background: #141518;
   border: 2px solid;
   border-radius: 4px;
@@ -735,7 +684,7 @@ h5 {
 
 .country-btn {
   height: 46px;
-  width: 170px;
+  width: 150px;
   background: #141518;
   border: 2px solid;
   border-radius: 4px;
@@ -749,7 +698,7 @@ h5 {
 
 .currency-btn {
   height: 46px;
-  width: 170px;
+  width: 150px;
   background: #141518;
   border: 2px solid;
   border-radius: 4px;
