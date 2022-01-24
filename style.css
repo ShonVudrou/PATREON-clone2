@@ -11,6 +11,9 @@ body {
 /* Header */
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   font-size: 14px;
   font-weight: 400;
   display: flex;
@@ -19,6 +22,7 @@ header {
   align-items: center;
   padding: 0px 20px;
   letter-spacing: 0.01em;
+  border-bottom: 0.1px solid #dadada;
 }
 
 .logo-container img {
@@ -33,7 +37,6 @@ header {
 
 nav {
   display: flex;
-  width: 100%;
 }
 
 .nav-links {
@@ -45,8 +48,10 @@ nav {
 }
 
 .nav-links li {
+  display: block;
   margin: 0 10px;
-  padding: 15px 0;
+  padding: 10px 0;
+  white-space: nowrap;
 }
 
 .nav-link {
@@ -138,6 +143,7 @@ nav {
 
 .search-box {
   display: flex;
+  flex: 1;
   margin: auto 0;
   height: 18px;
   line-height: 35px;
@@ -167,7 +173,8 @@ nav {
 .login-container {
   display: flex;
   margin: auto 0;
-  width: 400px;
+  max-width: 400px;
+  padding-right: 30px;
 }
 
 .login {
@@ -211,20 +218,36 @@ nav {
 /* First SECTION - Intro */
 
 .intro {
+  background: #141518;
+  margin-top: 50px;
+}
+
+.intro-wrap {
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  justify-content: center;
+
 }
 
 .left-container {
-  display: flex;
-  flex-direction: column;
-  background: #141518;
-  flex: 1;
-  min-height: 500px;
+  display: block;
+  width: 50%;
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+.right-container {
+  display: block;
+  width: 50%;
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 100px 20px;
 }
 
 h1 {
-  margin: 90px 90px 0px 90px;
+  padding: 90px 60px 0px 40px;
   font-size: 56px;
   font-weight: 700;
   text-align: left;
@@ -239,12 +262,12 @@ h1 {
   color: rgb(226, 226, 226);
   text-align: left;
   font-size: 20px;
-  margin: 15px 50px 30px 90px;
+  padding: 15px 60px 30px 40px;
   line-height: 1.8;
 }
 
 .btn-wrap {
-  margin: 0px 90px 100px 90px;
+  margin: 0px 60px 100px 40px;
 }
 
 .get-started-btn {
@@ -260,9 +283,8 @@ h1 {
   cursor: pointer;
 }
 
-.right-container {
-  background: #141518;
-  flex: 1;
+video {
+  max-width: 90%;
 }
 
 /* The SECTION with a long search-box */
@@ -375,7 +397,8 @@ h2 {
   flex-direction: row-reverse;
   flex: wrap;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 980px;
+  padding: 0 20px;
 }
 
 .feedback-container:nth-child(2n + 1) {
