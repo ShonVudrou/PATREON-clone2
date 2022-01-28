@@ -141,7 +141,6 @@ nav {
   background-color: rgb(246, 246, 246);
 }
 
-
 .search-box {
   display: flex;
   margin: auto 0;
@@ -222,8 +221,6 @@ nav {
   margin-top: 50px;
 }
 
-
-
 .intro-wrap {
   display: flex;
   flex-direction: row;
@@ -232,8 +229,6 @@ nav {
   max-width: 1200px;
   justify-content: center;
 }
-
-
 
 .left-container {
   display: block;
@@ -298,7 +293,7 @@ video {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 2.625rem;
   text-align: center;
   font-weight: 500;
   color: #241e11;
@@ -306,7 +301,13 @@ h2 {
 
 @media only screen and (max-width: 400px) {
   h2 {
-    font-size: 1.6rem;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  h2 {
+    font-size: 35px;
   }
 }
 
@@ -314,8 +315,6 @@ h2 {
   font-size: 42px;
   padding: 0px 20px 40px 20px;
 }
-
-
 
 .search-menu {
   display: flex;
@@ -396,8 +395,6 @@ h2 {
 
 /* Feedbacks SECTION */
 
-
-
 .feedback-container {
   display: flex;
   justify-content: center;
@@ -408,31 +405,9 @@ h2 {
   padding: 0 20px;
 }
 
-@media only screen and (max-width: 400px) {
-  .feedbacks {
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    
-  }
-}
-
-
-
-
 .feedback-container:nth-child(2n + 1) {
   flex-direction: row;
 }
-
-@media only screen and (max-width: 400px) {
-  .feedback-container:nth-child(2n + 1) {
-    flex-direction: column;
-  }
-}
-
-
-
 
 .description-1 {
   display: block;
@@ -577,24 +552,21 @@ h2 {
   padding: 160px 20px 100px 20px;
 }
 
+@media only screen and (max-width: 400px) {
+  .its-easier-container {
+    width: 400px;
+    text-align: center;
+  }
+}
 
 .its-easier-container h2 {
   padding-bottom: 30px;
 }
 
 .its-easier-container p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
   padding-bottom: 60px;
-}
-
-@media only screen and (max-width: 400px) {
-  .its-easier-container p {
-    font-size: 1.1rem;
-    text-align: center;
-    line-height: 2;
-    padding: 0 20px 60px 20px;
-  }
 }
 
 .its-easier-container img {
@@ -604,40 +576,68 @@ h2 {
 
 /* Other Creators SECTION */
 
+.other-creators {
+  display: flex;
+  flex-direction: column;
+  max-width: 1290px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .other-creators {
+    width: 400px;
+  }
+}
 
 .other-creators .content-wrap {
   display: flex;
+  flex-direction: row;
   max-width: 1290px;
   justify-content: center;
+  box-sizing: border-box;
   align-items: flex-start;
-  padding: 0 10px;
-  margin: 0 auto;
   padding-bottom: 120px;
 }
 
-.other-creators h2 {
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .other-creators .content-wrap {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .other-creators .content-wrap {
+    flex-direction: column;
+    width: 400px;
+    padding-bottom: 0;
+  }
+}
+
+.h2-container h2 {
   padding-top: 100px;
   padding-bottom: 50px;
 }
-/* 
-.columns-wrap {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  max-width: 1290px;
-} */
-
-
 
 .column-1,
 .column-2,
 .column-3 {
-
-  max-width: 23%;
   display: flex;
   flex-wrap: wrap;
   width: 30%;
+  box-sizing: border-box;
   padding: 0 30px;
+}
+
+@media only screen and (max-width: 400px) {
+  .column-1,
+  .column-2,
+  .column-3 {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 0 20px;
+  }
 }
 
 .other-creators img {
@@ -651,7 +651,9 @@ h5 {
   padding-bottom: 20px;
 }
 
-.column-1 p, .column-2 p, .column-3 p {
+.column-1 p,
+.column-2 p,
+.column-3 p {
   font-weight: 200;
   color: rgb(105, 105, 105);
   line-height: 1.5;
@@ -659,22 +661,33 @@ h5 {
   padding-bottom: 20px;
 }
 
-.column-1 a, .column-2 a, .column-3 a {
+.column-1 a,
+.column-2 a,
+.column-3 a {
   font-weight: 300;
   color: #131313;
+  padding-bottom: 100px;
 }
 
 /* Are you Ready SECTION */
-
-.are-you-ready {
-  background: #fafafa;
-}
 
 .are-you-ready .content-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  box-sizing: border-box;
+  padding: 100px 40px;
+  background: #fafafa;
+}
+
+@media only screen and (max-width: 400px) {
+  .are-you-ready .content-wrap {
+    width: 400px;
+    padding: 50px 40px 70px 40px;
+  }
+  .are-you-ready .content-wrap h2 {
+    font-size: 35px;
+  }
 }
 
 .are-you-ready .content-wrap h2 {
