@@ -376,7 +376,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1300px;
+  max-width: 1290px;
   margin: 0 auto;
 }
 
@@ -391,6 +391,9 @@ h2 {
   line-height: 2;
   padding: 0px 48px 64px 48px;
   margin: 0px 190px;
+}
+
+@media only screen and (max-width: 400px) {
 }
 
 /* Feedbacks SECTION */
@@ -409,10 +412,27 @@ h2 {
   flex-direction: row;
 }
 
+@media only screen and (max-width: 400px) {
+  .feedback-container {
+    flex-direction: column;
+    padding: 0 8px;
+    max-width: 100%;
+  }
+  .feedback-container:nth-child(2n + 1) {
+    flex-direction: column;
+  }
+}
+
 .description-1 {
   display: block;
   width: 50%;
   padding: 0 8px;
+}
+
+@media only screen and (max-width: 400px) {
+  .description-1 {
+    padding: 0px;
+  }
 }
 
 .short {
@@ -430,6 +450,16 @@ h2 {
   margin-top: 10px;
 }
 
+@media only screen and (max-width: 400px) {
+  .short {
+    font-size: 0.9rem;
+  }
+  .long {
+    font-size: 0.5rem;
+    padding-bottom: 10px;
+  }
+}
+
 .feedback {
   display: block;
   box-sizing: border-box;
@@ -439,6 +469,12 @@ h2 {
 .name-wrap {
   display: block;
   padding: 10px 0px 20px 8px;
+}
+
+@media only screen and (max-width: 400px) {
+  .name-wrap {
+    padding: 0px 0px 10px 0px;
+  }
 }
 
 .name-wrap a {
@@ -459,9 +495,24 @@ h2 {
   padding-top: 5px;
 }
 
+@media only screen and (max-width: 400px) {
+  .name-wrap a {
+    font-size: 0.5rem;
+  }
+  .name-wrap p {
+    font-size: 0.5rem;
+  }
+}
+
 .portrait {
   width: 95%;
   padding: 0 8px;
+}
+
+@media only screen and (max-width: 400px) {
+  .portrait {
+    padding: 0px;
+  }
 }
 
 .opinion-p {
@@ -470,6 +521,13 @@ h2 {
   line-height: 1.5;
   padding-left: 8px;
   padding-bottom: 80px;
+}
+
+@media only screen and (max-width: 400px) {
+  .opinion-p {
+    font-size: 0.5rem;
+    padding: 0px 0px 15px 0px;
+  }
 }
 
 /* Who uses Patreon? SECTION*/
@@ -484,14 +542,32 @@ h2 {
   padding-top: 80px;
 }
 
+@media only screen and (max-width: 400px) {
+  .who-uses-container {
+    width: 400px;
+  }
+}
+
 .who-uses-container p {
   font-size: 20px;
   font-weight: 300;
   justify-content: center;
+  box-sizing: border-box;
   line-height: 2;
   padding: 20px 0px 0px 0px;
-  width: 800px;
+  width: 60%;
   text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .who-uses-container p {
+    width: 45%;
+    font-size: 0.6rem;
+    padding-top: 10px;
+  }
+  .who-uses-container h2 {
+    font-size: 0.8rem;
+  }
 }
 
 .who-uses-container .content-wrap {
@@ -504,13 +580,34 @@ h2 {
   padding: 50px 40px 90px 40px;
 }
 
+@media only screen and (max-width: 400px) {
+  .who-uses-container .content-wrap {
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    padding: 20px 10px 90px 10px;
+  }
+}
+
 .who-uses-container .left-col {
   width: 50%;
+}
+
+@media only screen and (max-width: 400px) {
+  .who-uses-container .left-col {
+    width: 50%;
+  }
 }
 
 .who-uses-container .left-col img {
   width: 100%;
   padding-right: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .who-uses-container .left-col {
+    width: 50%;
+    padding: 0;
+  }
 }
 
 .right-col {
@@ -521,12 +618,27 @@ h2 {
   box-sizing: border-box;
 }
 
+@media only screen and (max-width: 400px) {
+  .right-col {
+    flex-flow: row wrap;
+  }
+}
+
 .professions-list {
   list-style: none;
   font-size: 1.6rem;
   line-height: 3rem;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 400px) {
+  .professions-list {
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+    padding-bottom: 10px;
+  }
 }
 
 .professions-list a {
