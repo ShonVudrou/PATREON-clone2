@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: borer-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -289,8 +289,35 @@ video {
 /* The SECTION with a long search-box */
 
 .search-section {
-  padding: 100px 0;
+  display: block;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 50px 100px 50px;
 }
+
+@media screen and (max-width: 400px) {
+  .search-section {
+    max-width: 400px;
+    padding: 0 10px 50px 10px;
+  }
+}
+
+
+
+.long-search-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 400px) {
+  .long-search-wrap{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+}
+
 
 h2 {
   font-size: 2.625rem;
@@ -299,50 +326,62 @@ h2 {
   color: #241e11;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   h2 {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media screen and (min-width: 401px) and (max-width: 960px) {
   h2 {
     font-size: 35px;
   }
 }
 
 .search-section h2 {
-  font-size: 42px;
-  padding: 0px 20px 40px 20px;
+  font-size: 40px;
+  padding: 0px 20px 50px 20px;
 }
 
-.search-menu {
-  display: flex;
-  max-width: 1290px;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 0 80px;
+@media screen and (max-width: 400px) {
+  .search-section h2 {
+    font-size: 26px;
+  }
 }
 
 .long-search-box {
+  flex-grow: 1; 
   display: flex;
-  height: 35px;
+  margin: 0 auto;
+  height: 50px;
   line-height: 35px;
   padding: 8px 12px;
   background: #f5f4f2;
   border-radius: 30px;
-  max-width: 90%;
+  width: 920px;
 }
+
 
 .long-search-box input {
   border: none;
   outline: none;
   background: #f5f4f2;
-  width: 900px;
+  width: 100%;
   padding: 1px 2px 1px 12px;
   letter-spacing: 0.1;
   font-size: 18px;
 }
+
+@media screen and (max-width: 400px) {
+  .long-search-box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .long-search-box input {
+    width: 100%;
+  }
+}
+
 
 .long-search-box i {
   margin: 8px 0px;
@@ -369,15 +408,23 @@ h2 {
   cursor: pointer;
 }
 
+@media screen and (max-width: 400px) {
+  .search-btn-wrap {
+    width: 100%;
+    padding: 0;
+  }
+  .search-btn {
+    width: 100%;
+  }
+}
+
 /* "What's Patreon?" SECTION */
 
-.whats-patreon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1290px;
+.whats-patreon {
+  display: block;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 0 50px;
 }
 
 .whats-patreon h2 {
@@ -389,11 +436,17 @@ h2 {
   font-weight: 300;
   text-align: center;
   line-height: 2;
-  padding: 0px 48px 64px 48px;
-  margin: 0px 190px;
+  padding: 0px 10px 64px 10px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
+  .whats-patreon {
+    max-width: 400px;
+    padding: 0 30px;
+  }
+  .whats-patreon p {
+    font-size: 18px;
+  }
 }
 
 /* Feedbacks SECTION */
@@ -412,7 +465,7 @@ h2 {
   flex-direction: row;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .feedback-container {
     flex-direction: column;
     padding: 0 8px;
@@ -429,7 +482,7 @@ h2 {
   padding: 0 8px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .description-1 {
     padding: 0px;
   }
@@ -450,7 +503,7 @@ h2 {
   margin-top: 10px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .short {
     font-size: 0.9rem;
   }
@@ -471,7 +524,7 @@ h2 {
   padding: 10px 0px 20px 8px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .name-wrap {
     padding: 0px 0px 10px 0px;
   }
@@ -495,7 +548,7 @@ h2 {
   padding-top: 5px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .name-wrap a {
     font-size: 0.5rem;
   }
@@ -509,7 +562,7 @@ h2 {
   padding: 0 8px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .portrait {
     padding: 0px;
   }
@@ -523,7 +576,7 @@ h2 {
   padding-bottom: 80px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .opinion-p {
     font-size: 0.5rem;
     padding: 0px 0px 15px 0px;
@@ -542,7 +595,7 @@ h2 {
   padding-top: 80px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .who-uses-container {
     width: 400px;
   }
@@ -559,7 +612,7 @@ h2 {
   text-align: center;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .who-uses-container p {
     width: 45%;
     font-size: 0.6rem;
@@ -580,7 +633,7 @@ h2 {
   padding: 50px 40px 90px 40px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .who-uses-container .content-wrap {
     flex-direction: column-reverse;
     box-sizing: border-box;
@@ -592,7 +645,7 @@ h2 {
   width: 50%;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .who-uses-container .left-col {
     width: 50%;
   }
@@ -603,7 +656,7 @@ h2 {
   padding-right: 10px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .who-uses-container .left-col {
     width: 50%;
     padding: 0;
@@ -618,7 +671,7 @@ h2 {
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .right-col {
     flex-flow: row wrap;
   }
@@ -632,7 +685,7 @@ h2 {
   letter-spacing: 0.02em;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .professions-list {
     text-align: center;
     font-size: 0.7rem;
@@ -664,7 +717,7 @@ h2 {
   padding: 160px 20px 100px 20px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .its-easier-container {
     width: 400px;
     text-align: center;
@@ -697,7 +750,7 @@ h2 {
   align-items: center;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .other-creators {
     width: 400px;
   }
@@ -713,13 +766,13 @@ h2 {
   padding-bottom: 120px;
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media screen and (min-width: 401px) and (max-width: 960px) {
   .other-creators .content-wrap {
     flex-direction: row;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .other-creators .content-wrap {
     flex-direction: column;
     width: 400px;
@@ -742,7 +795,7 @@ h2 {
   padding: 0 30px;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .column-1,
   .column-2,
   .column-3 {
@@ -792,7 +845,7 @@ h5 {
   background: #fafafa;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
   .are-you-ready .content-wrap {
     width: 400px;
     padding: 50px 40px 70px 40px;
