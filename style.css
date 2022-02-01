@@ -323,15 +323,13 @@ video {
   }
 }
 
-
-
 .long-search-wrap {
   display: flex;
   justify-content: center;
 }
 
 @media screen and (max-width: 400px) {
-  .long-search-wrap{
+  .long-search-wrap {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -339,11 +337,10 @@ video {
   }
 }
 
-
 h2 {
   font-size: 2.625rem;
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   color: #241e11;
 }
 
@@ -371,7 +368,7 @@ h2 {
 }
 
 .long-search-box {
-  flex-grow: 1; 
+  flex-grow: 1;
   display: flex;
   margin: 0 auto;
   height: 50px;
@@ -381,7 +378,6 @@ h2 {
   border-radius: 30px;
   width: 920px;
 }
-
 
 .long-search-box input {
   border: none;
@@ -402,7 +398,6 @@ h2 {
     width: 100%;
   }
 }
-
 
 .long-search-box i {
   margin: 8px 0px;
@@ -570,13 +565,11 @@ h2 {
   text-decoration: underline #ff424d;
 }
 
-
 .name-wrap p {
   font-weight: 300;
   font-size: 14px;
   padding-top: 5px;
 }
-
 
 .portrait {
   width: 100%;
@@ -611,7 +604,6 @@ h2 {
   max-width: 1140px;
   margin: 0 auto;
 }
-
 
 .who-uses-container p {
   font-size: 20px;
@@ -650,7 +642,6 @@ h2 {
   display: block;
   width: 50%;
 }
-
 
 .who-uses-container .left-col img {
   width: 100%;
@@ -701,8 +692,6 @@ h2 {
   }
 }
 
-
-
 .professions-list a {
   text-decoration: none;
   cursor: pointer;
@@ -723,37 +712,59 @@ h2 {
 /* It's easier than you think SECTION */
 
 .its-easier-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  display: block;
+  max-width: 1140px;
   margin: 0 auto;
-  max-width: 1200px;
+}
+
+.inner-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 160px 20px 100px 20px;
+  padding: 96px 48px;
 }
 
 @media screen and (max-width: 400px) {
   .its-easier-container {
-    width: 400px;
-    text-align: center;
-    padding-top: 50px;
+    width: 100%;
+    padding: 0 24px;
+  }
+  .inner-container {
+    padding: 50px 16px 0px 16px;
   }
 }
 
 .its-easier-container h2 {
   padding-bottom: 30px;
+  font-weight: 700;
 }
 
-.its-easier-container p {
-  font-size: 1.1rem;
+@media screen and (max-width: 400px) {
+  .inner-container h2 {
+    padding-bottom: 20px;
+  }
+}
+
+.inner-container p {
+  text-align: center;
+  font-size: 1.3rem;
   font-weight: 300;
   padding-bottom: 60px;
 }
 
-.its-easier-container img {
-  max-width: 90%;
+.inner-container img {
+  width: 100%;
   box-shadow: 10px 15px 60px 1px #dadada;
+}
+
+@media screen and (max-width: 400px) {
+  .inner-container p {
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 300;
+  }
 }
 
 /* Other Creators SECTION */
@@ -761,16 +772,10 @@ h2 {
 .other-creators {
   display: flex;
   flex-direction: column;
-  max-width: 1290px;
+  max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (max-width: 400px) {
-  .other-creators {
-    width: 400px;
-  }
 }
 
 .other-creators .content-wrap {
@@ -783,23 +788,15 @@ h2 {
   padding-bottom: 120px;
 }
 
-@media screen and (min-width: 401px) and (max-width: 960px) {
-  .other-creators .content-wrap {
-    flex-direction: row;
-  }
-}
-
 @media screen and (max-width: 400px) {
   .other-creators .content-wrap {
     flex-direction: column;
-    width: 400px;
-    padding-bottom: 0;
+    padding: 0px 25px;
   }
 }
 
 .h2-container h2 {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 40px 50px 40px;
 }
 
 .column-1,
@@ -809,7 +806,7 @@ h2 {
   flex-wrap: wrap;
   width: 30%;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 0 30px 80px 30px;
 }
 
 @media screen and (max-width: 400px) {
@@ -817,8 +814,7 @@ h2 {
   .column-2,
   .column-3 {
     box-sizing: border-box;
-    width: 400px;
-    padding: 0 20px;
+    width: 100%;
   }
 }
 
@@ -829,7 +825,7 @@ h2 {
 
 h5 {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   padding-bottom: 20px;
 }
 
@@ -848,7 +844,6 @@ h5 {
 .column-3 a {
   font-weight: 300;
   color: #131313;
-  padding-bottom: 100px;
 }
 
 /* Are you Ready SECTION */
@@ -984,4 +979,4 @@ h5 {
   letter-spacing: 0.01em;
   margin: 0 0 0.5rem 0;
   cursor: pointer;
-} 
+}
