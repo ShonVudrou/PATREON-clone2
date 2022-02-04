@@ -291,7 +291,7 @@ nav {
   max-width: 1200px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .intro-wrap {
     flex-direction: column;
   }
@@ -310,6 +310,17 @@ nav {
   width: 50%;
   box-sizing: border-box;
   padding: 100px 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .left-container {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .right-container {
+    width: 100%;
+    padding: 100px 40px 90px 40px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -340,6 +351,19 @@ h1 {
   line-height: 1.8;
 }
 
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 172px;
+    letter-spacing: 0.05rem;
+  }
+  .left-container p {
+    padding: 15px 0px 30px 0px;
+    font-weight: 300;
+  }
+}
+
 @media screen and (max-width: 400px) {
   h1 {
     font-size: 40px;
@@ -367,7 +391,7 @@ h1 {
 }
 
 video {
-  max-width: 100%;
+  width: 100%;
 }
 
 /* The SECTION with a long search-box */
@@ -379,9 +403,8 @@ video {
   padding: 100px 50px 100px 50px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .search-section {
-    max-width: 400px;
     padding: 50px 10px 50px 10px;
   }
 }
@@ -389,6 +412,15 @@ video {
 .long-search-wrap {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .long-search-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -410,12 +442,6 @@ h2 {
 @media screen and (max-width: 400px) {
   h2 {
     font-size: 26px;
-  }
-}
-
-@media screen and (min-width: 401px) and (max-width: 960px) {
-  h2 {
-    font-size: 35px;
   }
 }
 
@@ -452,7 +478,7 @@ h2 {
   font-size: 18px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .long-search-box {
     width: 100%;
     margin-bottom: 10px;
@@ -487,7 +513,7 @@ h2 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .search-btn-wrap {
     width: 100%;
     padding: 0;
@@ -511,16 +537,15 @@ h2 {
 }
 
 .whats-patreon p {
-  font-size: 20px;
+  font-size: 1.125rem;
   font-weight: 300;
   text-align: center;
   line-height: 2;
-  padding: 0px 10px 64px 10px;
+  padding: 0px 5px 64px 5px;
 }
 
 @media screen and (max-width: 400px) {
   .whats-patreon {
-    max-width: 400px;
     padding: 0 30px;
   }
   .whats-patreon p {
@@ -545,10 +570,10 @@ h2 {
   flex-direction: row;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .feedback-container {
     flex-direction: column;
-    padding: 0 8px 40px 8px;
+    padding: 0 8px 120px 8px;
     width: 100%;
   }
   .feedback-container:nth-child(2n + 1) {
@@ -556,10 +581,23 @@ h2 {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .feedback-container {
+    padding: 0 8px 40px 8px;
+  }
+}
+
 .description-1 {
   display: block;
   width: 50%;
   padding: 0 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .description-1 {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -584,6 +622,15 @@ h2 {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .short {
+    font-size: 24px;
+  }
+  .long {
+    padding-bottom: 25px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .short {
     font-size: 24px;
@@ -597,6 +644,12 @@ h2 {
   display: block;
   box-sizing: border-box;
   width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .feedback {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -639,7 +692,14 @@ h2 {
   padding: 0 8px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
+  .portrait {
+    padding: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .portrait {
     padding: 0px;
     padding-bottom: 5px;
@@ -652,6 +712,12 @@ h2 {
   line-height: 1.5;
   padding-left: 8px;
   padding-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .opinion-p {
+    padding: 10px 0px 0px 0px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -681,7 +747,7 @@ h2 {
 
 @media screen and (max-width: 400px) {
   .who-uses-container p {
-    font-size: 1.1rem;
+    font-size: 18px;
     padding-top: 20px;
   }
 }
@@ -694,10 +760,16 @@ h2 {
   padding: 50px 64px 90px 64px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .who-uses-container .content-wrap {
     flex-direction: column-reverse;
-    padding: 20px 10px 50px 10px;
+    padding: 20px 10px 100px 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .who-uses-container .content-wrap {
+    padding-bottom: 50px;
   }
 }
 
@@ -711,7 +783,7 @@ h2 {
   padding: 0 8px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .who-uses-container .left-col {
     width: 100%;
     padding: 0 20px;
@@ -726,7 +798,7 @@ h2 {
   padding: 0 8px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .right-col {
     width: 100%;
     margin: 0;
@@ -743,7 +815,7 @@ h2 {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .professions-list {
     display: flex;
     flex-flow: row wrap;
@@ -766,7 +838,7 @@ h2 {
   color: #131313;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .professions-list li {
     padding: 10px 10px;
   }
@@ -852,10 +924,17 @@ h2 {
   padding-bottom: 120px;
 }
 
+@media screen and (max-width: 767px) {
+  .other-creators .content-wrap {
+    flex-direction: column;
+    padding: 0px 25px 40px 25px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .other-creators .content-wrap {
     flex-direction: column;
-    padding: 0px 25px;
+    padding-bottom: 0px;
   }
 }
 
@@ -873,7 +952,7 @@ h2 {
   padding: 0 30px 80px 30px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
   .column-1,
   .column-2,
   .column-3 {
@@ -921,18 +1000,17 @@ h5 {
   background: #fafafa;
 }
 
-@media screen and (max-width: 400px) {
+.are-you-ready .content-wrap h2 {
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
   .are-you-ready .content-wrap {
-    width: 400px;
     padding: 50px 40px 70px 40px;
   }
   .are-you-ready .content-wrap h2 {
-    font-size: 35px;
+    font-size: 32px;
   }
-}
-
-.are-you-ready .content-wrap h2 {
-  padding-bottom: 10px;
 }
 
 .are-you-ready .btn-container {
